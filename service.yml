@@ -1,0 +1,12 @@
+iVersion: v1
+kind: Service
+metadata:
+  name: service-name1
+spec:
+  type: NodePort
+  ports:
+    - targetPort: 80
+      port: 80
+      nodePort: 30009
+  selector:
+      app: nginx
